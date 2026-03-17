@@ -128,4 +128,9 @@ type Flags struct {
 
 	// RuntimeSecret enables the runtime/secret package.
 	RuntimeSecret bool
+
+	// JIT enables the runtime/jit package for registering user code
+	// frames (JIT compilers, WASM engines, embedded VMs) with the
+	// Go runtime's stack unwinder, panic/recover, and GC.
+	JIT bool
 }
